@@ -742,20 +742,18 @@ function clearAppCache() {
 }
 
 const _ACCENT_DARK  = {
-  purple:{ hue:270, accent:'#d0bcff', h:'#b89af7', a2:'#ccc2dc', container:'#4f378b', on:'#381e72', onCont:'#eaddff', glow:'rgba(208,188,255,.18)', lt:'rgba(208,188,255,.12)', strip:'rgba(208,188,255,.55)', borderGlow:'rgba(208,188,255,.35)' },
+  purple:{ hue:270, accent:'#CFBFEB', h:'#EBDDFF', a2:'#CDC2DB', container:'#594C72', on:'#463A5E', onCont:'#EBDDFF', glow:'rgba(207,191,235,.18)', lt:'rgba(207,191,235,.12)', strip:'rgba(207,191,235,.55)', borderGlow:'rgba(207,191,235,.35)' },
   blue:  { hue:210, accent:'#9ecaff', h:'#7bafef', a2:'#aab9cc', container:'#004a77', on:'#001d36', onCont:'#cde5ff', glow:'rgba(158,202,255,.18)', lt:'rgba(158,202,255,.12)', strip:'rgba(158,202,255,.55)', borderGlow:'rgba(158,202,255,.35)' },
   green: { hue:130, accent:'#78dc77', h:'#56bf55', a2:'#88bb88', container:'#1e5c1c', on:'#002105', onCont:'#94f990', glow:'rgba(120,220,119,.18)', lt:'rgba(120,220,119,.12)', strip:'rgba(120,220,119,.55)', borderGlow:'rgba(120,220,119,.35)' },
-  red:   { hue:  4, accent:'#ffb4ab', h:'#e08077', a2:'#c9b3b0', container:'#93000a', on:'#690005', onCont:'#ffdad6', glow:'rgba(255,180,171,.18)', lt:'rgba(255,180,171,.12)', strip:'rgba(255,180,171,.55)', borderGlow:'rgba(255,180,171,.35)' },
   orange:{ hue: 28, accent:'#ffb77c', h:'#e09050', a2:'#c9aa90', container:'#6d3400', on:'#3d1d00', onCont:'#ffdcc0', glow:'rgba(255,183,124,.18)', lt:'rgba(255,183,124,.12)', strip:'rgba(255,183,124,.55)', borderGlow:'rgba(255,183,124,.35)' },
   pink:  { hue:330, accent:'#ffb2c8', h:'#e0809a', a2:'#ccb0bb', container:'#810042', on:'#520028', onCont:'#ffd9e3', glow:'rgba(255,178,200,.18)', lt:'rgba(255,178,200,.12)', strip:'rgba(255,178,200,.55)', borderGlow:'rgba(255,178,200,.35)' },
   teal:  { hue:180, accent:'#80d8d0', h:'#55bdb5', a2:'#90c0bc', container:'#006060', on:'#003737', onCont:'#9ef1e8', glow:'rgba(128,216,208,.18)', lt:'rgba(128,216,208,.12)', strip:'rgba(128,216,208,.55)', borderGlow:'rgba(128,216,208,.35)' },
   yellow:{ hue: 46, accent:'#e8c84a', h:'#c9a820', a2:'#c8b870', container:'#614400', on:'#3a2800', onCont:'#ffe08c', glow:'rgba(232,200,74,.18)',  lt:'rgba(232,200,74,.12)',  strip:'rgba(232,200,74,.55)',  borderGlow:'rgba(232,200,74,.35)'  },
 };
 const _ACCENT_LIGHT = {
-  purple:{ hue:270, accent:'#6750a4', h:'#4f378b', a2:'#625b71', container:'#eaddff', on:'#ffffff', onCont:'#21005d', glow:'rgba(103,80,164,.3)',  lt:'rgba(103,80,164,.1)',  strip:'rgba(103,80,164,.50)', borderGlow:'rgba(103,80,164,.30)' },
+  purple:{ hue:270, accent:'#675788', h:'#4D3D6D', a2:'#635B71', container:'#D9C5FF', on:'#FDF7FF', onCont:'#4D3D6D', glow:'rgba(103,87,136,.3)',  lt:'rgba(103,87,136,.1)',  strip:'rgba(103,87,136,.50)', borderGlow:'rgba(103,87,136,.30)' },
   blue:  { hue:210, accent:'#0061a4', h:'#004a77', a2:'#3a6f8f', container:'#cde5ff', on:'#ffffff', onCont:'#001d36', glow:'rgba(0,97,164,.3)',    lt:'rgba(0,97,164,.1)',    strip:'rgba(0,97,164,.50)',   borderGlow:'rgba(0,97,164,.30)'   },
   green: { hue:130, accent:'#006e1c', h:'#004c13', a2:'#396b3e', container:'#94f990', on:'#ffffff', onCont:'#002105', glow:'rgba(0,110,28,.3)',    lt:'rgba(0,110,28,.1)',    strip:'rgba(0,110,28,.50)',   borderGlow:'rgba(0,110,28,.30)'   },
-  red:   { hue:  4, accent:'#ba1a1a', h:'#930014', a2:'#8c3a3a', container:'#ffdad6', on:'#ffffff', onCont:'#410002', glow:'rgba(186,26,26,.3)',   lt:'rgba(186,26,26,.1)',   strip:'rgba(186,26,26,.50)',  borderGlow:'rgba(186,26,26,.30)'  },
   orange:{ hue: 28, accent:'#9c4e00', h:'#6d3400', a2:'#7a5030', container:'#ffdcc0', on:'#ffffff', onCont:'#3d1d00', glow:'rgba(156,78,0,.3)',    lt:'rgba(156,78,0,.1)',    strip:'rgba(156,78,0,.50)',   borderGlow:'rgba(156,78,0,.30)'   },
   pink:  { hue:330, accent:'#9c0057', h:'#6e003b', a2:'#8c3b65', container:'#ffd9e3', on:'#ffffff', onCont:'#3e0022', glow:'rgba(156,0,87,.3)',    lt:'rgba(156,0,87,.1)',    strip:'rgba(156,0,87,.50)',   borderGlow:'rgba(156,0,87,.30)'   },
   teal:  { hue:180, accent:'#006b66', h:'#004b47', a2:'#3a6b68', container:'#9ef1e8', on:'#ffffff', onCont:'#00201e', glow:'rgba(0,107,102,.3)',   lt:'rgba(0,107,102,.1)',   strip:'rgba(0,107,102,.50)',  borderGlow:'rgba(0,107,102,.30)'  },
@@ -1773,7 +1771,7 @@ async function initApp(usernameOverride, apiKeyOverride) {
       setTimeout(() => showToast(t('toast_welcome'), 'info'), 2200);
     }
 
-    const theme = localStorage.getItem('ls_theme') || 'dark';
+    const theme = localStorage.getItem('ls_theme') || 'auto';
     applyTheme(theme);
 
     document.getElementById('setup-screen')?.classList.add('hidden');
@@ -1991,7 +1989,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   // Apply saved theme immediately
-  const theme = localStorage.getItem('ls_theme') || 'dark';
+  const theme = localStorage.getItem('ls_theme') || 'auto';
   document.documentElement.dataset.theme = theme;
   APP.currentTheme = theme;
 
