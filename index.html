@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="dark">
+<html lang="fr" data-theme="auto">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -1214,11 +1214,11 @@
                       <i class="fas fa-sun"></i>
                       <span data-i18n="settings.themeLight">Light</span>
                     </button>
-                    <button class="th-btn" data-t="auto" onclick="setTheme('auto')" title="Auto">
+                    <button class="th-btn active" data-t="auto" onclick="setTheme('auto')" title="Auto">
                       <i class="fas fa-adjust"></i>
                       <span data-i18n="settings.themeAuto">Auto</span>
                     </button>
-                    <button class="th-btn active" data-t="dark" onclick="setTheme('dark')" title="Dark">
+                    <button class="th-btn" data-t="dark" onclick="setTheme('dark')" title="Dark">
                       <i class="fas fa-moon"></i>
                       <span data-i18n="settings.themeDark">Dark</span>
                     </button>
@@ -1235,13 +1235,12 @@
                     <span data-i18n="stg_color_hint">Light / dark tones auto-adjust based on theme.</span>
                   </p>
                   <div class="setting-ctrl accent-btns" id="accent-btns">
-                    <button class="acc-dot active" data-color="purple" style="background:linear-gradient(135deg,#6750a4,#9c7fe0)" onclick="setAccent('purple')" title="Violet"></button>
+                    <button class="acc-dot active" data-color="purple" style="background:linear-gradient(135deg,#7C3AED,#CFBFEB)" onclick="setAccent('purple')" title="Défaut (app)"></button>
                     <button class="acc-dot" data-color="blue" style="background:linear-gradient(135deg,#0061a4,#5b9fd8)" onclick="setAccent('blue')" title="Bleu"></button>
                     <button class="acc-dot" data-color="teal" style="background:linear-gradient(135deg,#006b66,#3aada8)" onclick="setAccent('teal')" title="Teal"></button>
                     <button class="acc-dot" data-color="green" style="background:linear-gradient(135deg,#006e1c,#4caf50)" onclick="setAccent('green')" title="Vert"></button>
                     <button class="acc-dot" data-color="yellow" style="background:linear-gradient(135deg,#6c5c00,#e8c84a)" onclick="setAccent('yellow')" title="Jaune"></button>
                     <button class="acc-dot" data-color="orange" style="background:linear-gradient(135deg,#9c4e00,#ff8c42)" onclick="setAccent('orange')" title="Orange"></button>
-                    <button class="acc-dot" data-color="red" style="background:linear-gradient(135deg,#ba1a1a,#ff5252)" onclick="setAccent('red')" title="Rouge"></button>
                     <button class="acc-dot" data-color="pink" style="background:linear-gradient(135deg,#9c0057,#e91e8c)" onclick="setAccent('pink')" title="Rose"></button>
                     <button class="acc-dot acc-dot--dynamic" data-color="dynamic" onclick="setAccent('dynamic')" title="Dynamique (pochette en cours)">
                       <i class="fas fa-magic" style="font-size:8px;color:#fff"></i>
@@ -1251,7 +1250,7 @@
                       <i class="fas fa-desktop" style="font-size:8px;color:#fff;text-shadow:0 0 3px #000"></i>
                     </button>
                     <label class="acc-dot acc-dot--custom" data-color="custom" id="acc-custom-wrap" data-i18n-title="color_custom" title="Custom colour" onclick="setAccent('custom')">
-                      <input type="color" id="acc-custom-input" value="#d0bcff" oninput="setCustomAccent(this.value)">
+                      <input type="color" id="acc-custom-input" value="#7C3AED" oninput="setCustomAccent(this.value)">
                       <i class="fas fa-eyedropper" style="font-size:8px;color:#fff;pointer-events:none;position:relative;z-index:1"></i>
                     </label>
                   </div>
